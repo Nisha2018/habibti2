@@ -7365,6 +7365,10 @@ pre::-webkit-scrollbar-thumb {
 #home .form-area{
     width: 80%;
 }
+
+.col-half-offset{
+    margin-left:4.166666667%
+}
 }
 
 #home .form-area form{
@@ -7393,10 +7397,6 @@ pre::-webkit-scrollbar-thumb {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
-}
-
-.col-half-offset{
-    margin-left:4.166666667%
 }
 
 input::focus{
