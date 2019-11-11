@@ -161,7 +161,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                         <button type="submit" class="button background-60-d heading-d">Learn More</button>
                                     </div>
                                 </form>
-                                <div id="form-message">
+                                <div id="form-message" style="display: none;">
                                     ThankYou!
                                 </div>
                             </div>
@@ -724,8 +724,10 @@ const isValidElement = element => { return element.name && element.value; };
   function pushData(){
   var xmlHttp = new XMLHttpRequest();
    xmlHttp.onreadystatechange = function() {
-       if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-           console.log(xmlHttp.responseText);
+       let element = document.getElementById('form-message');
+       let form = document.getElementById('form');
+        element.style.display = 'block';
+        form.style.display = 'none';
    }
    const form = document.getElementById('form');
    const data = formToJSON(form);
