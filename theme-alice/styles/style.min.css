@@ -4626,7 +4626,8 @@ p {
     .home-mary .textillate,
     .home-suzi .textillate {
         font-size: 24px;
-        line-height: 24px
+        line-height: 24px;
+        text-align: center;
     }
 }
 
@@ -5276,4 +5277,8 @@ html {
 
 #process .button{
     padding: 15px 25px;
+}
+
+#process .process-step .small{
+    text-transform: capitalize;
 }

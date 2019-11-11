@@ -7369,6 +7369,11 @@ pre::-webkit-scrollbar-thumb {
 .col-half-offset{
     margin-left:4.166666667%
 }
+
+#team .caption{
+        font-weight: bold;
+        font-size: 16px;
+    }
 }
 
 #home .form-area form{
@@ -7413,6 +7418,12 @@ pre::-webkit-scrollbar-thumb {
     #team .product{
         margin-bottom: 20px;
     }
+
+    #team .caption{
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 20px;
+    }
 }
 
 
@@ -7421,7 +7432,6 @@ pre::-webkit-scrollbar-thumb {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 70px;
-    height: auto;
 }
+
 
