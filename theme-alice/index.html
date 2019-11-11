@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="images/fabicon.png" type="images/x-icon" />
 </head>
 
-<body class="state1 background-100-e">
+<body class="state1 background-100-e" onload="submit()">
     <div class="ext-nav background-95-h page-transition">
         <div class="view half-height">
             <script data-pagespeed-no-defer>//<![CDATA[
@@ -87,7 +87,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
     <nav class="navbar navbar-default navbar-fixed-top page-transition colors-e background-solid" role="navigation" id="top-nav">
         <div class="container">
             <div class="navbar-header">
-                <a class="menu-toggle ext-nav-toggle visible-xs-block" data-target=".ext-nav" href="#"><span></span></a>
+                <a class="menu-toggle ext-nav-toggle visible-sm-block" data-target=".ext-nav" href="#"><span></span></a>
                 <a class="menu-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="#"><span></span></a>
                 <a class="navbar-brand" href="">
                     <img src="images/logo.png" alt="logo">
@@ -140,25 +140,30 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 <div class="form-text">
                                     <p>Register Now</p>
                                 </div>
-                                <form method="get" action="" class="register-form" autocomplete="off">
+                                <form onsubmit="pushData();return false;" class="register-form" autocomplete="off" id="form">
                                     <div class="name">
                                         <div>
-                                            <input class="form-control" type="text" name="name" placeholder="Name*" aria-label="name" required>
+                                            <input class="form-control" type="text" name="Name" placeholder="Name*" aria-label="name" required>
                                         </div>
                                     </div>
                                     <div>
-                                        <input class="form-control" type="email" name="mail" placeholder="Email*" aria-label="email" required>
+                                        <input class="form-control" type="email" name="Email" placeholder="Email*" aria-label="email" required>
                                     </div>
                                     <div>
-                                        <input class="form-control" type="tel" name="mobile" placeholder="Contact Number*" aria-label="number" required>
+                                        <input class="form-control" type="tel" name="Phone" placeholder="Contact Number*" aria-label="number" required>
                                     </div>
                                     <div>
-                                        <input class="form-control" type="text" name="organization" placeholder="Organization*" aria-label="organization" required>
+                                        <input class="form-control" type="text" name="Organization" placeholder="Organization*" aria-label="organization" required>
                                     </div>
+                                    <input type="hidden" name="platform" id="platform">
+                                    <input type="hidden" name="source" id="source">
                                     <div>
                                         <button type="submit" class="button background-60-d heading-d">Learn More</button>
                                     </div>
                                 </form>
+                                <div id="form-message">
+                                    ThankYou!
+                                </div>
                             </div>
                         </div>
                         <!-- END: form -->
@@ -406,7 +411,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                             <div class="grid">
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["design"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 1" src="images/x1.jpg.pagespeed.ic.ZGv2JtnomL.webp" data-pagespeed-url-hash="4101243708" />
+                                        <img alt="Project 1" src="images/enable.jpg" data-pagespeed-url-hash="4101243708" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Enable Women</p>
@@ -417,7 +422,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web", "video"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 2" src="images/x2.jpg.pagespeed.ic.-q4r2jNky6.webp" data-pagespeed-url-hash="100776333" />
+                                        <img alt="Project 2" src="images/empower.jpg" data-pagespeed-url-hash="100776333" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Empower Women</p>
@@ -428,7 +433,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 3" src="images/x3.jpg.pagespeed.ic.TqqSG-YypL.webp" data-pagespeed-url-hash="395276254" />
+                                        <img alt="Project 3" src="images/Periods is a Reality.jpg" data-pagespeed-url-hash="395276254" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Periods is a Reality</p>
@@ -438,7 +443,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web", "video"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 4" src="images/x4.jpg.pagespeed.ic.YWKSi4ClpR.webp" data-pagespeed-url-hash="689776175" />
+                                        <img alt="Project 4" src="images/month on month.jpg" data-pagespeed-url-hash="689776175" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Month on Month</p>
@@ -449,7 +454,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 5" src="images/x5.jpg.pagespeed.ic.sMASQh0LJp.webp" data-pagespeed-url-hash="984276096" />
+                                        <img alt="Project 5" src="images/period stress.jpg" data-pagespeed-url-hash="984276096" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Period Stress is real</p>
@@ -460,7 +465,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web", "design"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 6" src="images/x6.jpg.pagespeed.ic.qaHvBfG9qN.webp" data-pagespeed-url-hash="1278776017" />
+                                        <img alt="Project 6" src="images/Period products is basic Hygiene.jpg" data-pagespeed-url-hash="1278776017" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Period products is basic Hygiene</p>
@@ -472,7 +477,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["design", "video", "web"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 7" src="images/x7.jpg.pagespeed.ic.kmAJZOOAcv.webp" data-pagespeed-url-hash="1573275938" />
+                                        <img alt="Project 7" src="images/celebrate women.jpg" data-pagespeed-url-hash="1573275938" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Celebrate Women</p>
@@ -484,7 +489,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 8" src="images/x8.jpg.pagespeed.ic.GkJm0eADUW.webp" data-pagespeed-url-hash="1867775859" />
+                                        <img alt="Project 8" src="images/" data-pagespeed-url-hash="1867775859" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Access to Period Products</p>
@@ -495,7 +500,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design", "video", "web"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 9" src="images/x9.jpg.pagespeed.ic.YxbMaZMHtm.webp" data-pagespeed-url-hash="2162275780" />
+                                        <img alt="Project 9" src="images/Community Responsibility.jpg" data-pagespeed-url-hash="2162275780" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Community Responsibility</p>
@@ -506,7 +511,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 10" src="images/x10.jpg.pagespeed.ic.-RnHL_WTuF.webp" data-pagespeed-url-hash="846026446" />
+                                        <img alt="Project 10" src="images/social chnage.jpg" data-pagespeed-url-hash="846026446" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Social Change</p>
@@ -527,7 +532,7 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
                                 </div>
                                 <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web", "design"]'>
                                     <a href="#" class="hover-overlay">
-                                        <img alt="Project 12" src="images/x12.jpg.pagespeed.ic.Gb8-FaMR1T.webp" data-pagespeed-url-hash="1435026288" />
+                                        <img alt="Project 12" src="images/support women.jpg" data-pagespeed-url-hash="1435026288" />
                                         <div class="overlay background-90-e">
                                             <div class="hidden-xs">
                                                 <p class="title heading-e">Support Women</p>
@@ -690,6 +695,57 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
         ga('send', 'pageview');
     }
     </script>
+
+    <script type="text/javascript">
+var x = '';
+function submit(){
+let url_string = window.location.href;
+var url = new URL(url_string);
+var content = url.searchParams.get("utm_platform");
+let element = document.getElementById('form-message');
+let form = document.getElementById('form');
+if(window.location.href.includes('?success=true')){
+element.style.display = 'block';
+form.style.display = 'none';
+}else if(content){
+let input = document.getElementById('platform');
+input.value = content;
+}
+}
+</script>
+
+<script type="text/javascript">
+    const isValidValue = element => { return (!['checkbox', 'radio'].includes(element.type) || element.checked); };
+const isValidElement = element => { return element.name && element.value; };
+    const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+        if (isValidElement(element)) { data[element.name] = element.value; } 
+        return data; 
+    }, {});
+  function pushData(){
+  var xmlHttp = new XMLHttpRequest();
+   xmlHttp.onreadystatechange = function() {
+       if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+           console.log(xmlHttp.responseText);
+   }
+   const form = document.getElementById('form');
+   const data = formToJSON(form);
+
+   let params = "";
+
+   for(let key in data){
+    params = params + key+"="+data[key]+'&';
+   }
+
+
+   console.log(params);
+
+   xmlHttp.open("GET", 'https://script.google.com/macros/s/AKfycbwul0ASiIlvODyEFCx8W8vt7xboMGdxHeEQ6jz9bc01F3h3Pkvm/exec?'+params, true); // true for asynchronous
+   xmlHttp.send(null);
+   return false;
+  }
+ </script>
+
+
 </body>
 
 </html>
