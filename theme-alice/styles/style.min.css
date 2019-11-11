@@ -3191,8 +3191,8 @@ html.mobile video.bg {
     }
 
     .hover-overlay .overlay>div .title {
-        font-size: 10px;
-        line-height: 10px
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .hover-overlay .overlay>div a i,
