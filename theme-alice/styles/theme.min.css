@@ -7374,6 +7374,12 @@ pre::-webkit-scrollbar-thumb {
         font-weight: bold;
         font-size: 16px;
     }
+.intro p.title{
+    font-size: 17px;
+    line-height: 28px;
+}   
+	
+	
 
 }
 
