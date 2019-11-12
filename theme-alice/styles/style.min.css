@@ -3575,20 +3575,24 @@ input.button {
 }
 
 ul.simple {
-    padding: 0 0 0 10px
+    padding: 0 0 0 3px
 }
 
 ul.simple li {
-    text-indent: -5px;
+    /*text-indent: -5px;*/
     list-style: none;
     display: list-item;
     text-align: -webkit-match-parent
 }
 
-ul.simple li:before {
+ul.simple.links li:before {
     content: "-";
     position: relative;
     left: -5px
+}
+
+ul.simple li .white{
+    color: #fff;
 }
 
 .main-icon {
@@ -5269,9 +5273,9 @@ html {
 
 
 @media screen and (max-width: 991px){
-#home .view{
-	padding-top: 50px;
-    padding-bottom: 20px;
+#home .content.home-alice.full-size.colors-a{
+	padding-top: 65px;
+    padding-bottom: 40px;
 }
 
 }
@@ -5322,6 +5326,9 @@ html {
       display:block !important;
   }
 }
+
+
+
 
 
 

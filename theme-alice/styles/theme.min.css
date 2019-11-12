@@ -7078,7 +7078,7 @@ footer.colors-h.border-top {
 }
 
 .background-transparent {
-    background-color: transparent !important
+    background: rgba(0,0,0,0.4) ;
 }
 
 .primary {
@@ -7393,6 +7393,8 @@ pre::-webkit-scrollbar-thumb {
 #home .form-area form .form-control{
 	padding: 20px 10px;
 	border-radius: 0;
+    color: #fff;
+    font-weight: normal;
 }
 
 #home .form-area form button{
